@@ -2,6 +2,9 @@ class cfgFunctions
 {
     class KING
     {
-        class manageZombies{};
+        class ZombieScripts
+        {
+            class manageZombies{};
+        };
     };
 };

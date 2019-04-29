@@ -1,0 +1,1 @@
+call KING_fnc_manageZombies;
