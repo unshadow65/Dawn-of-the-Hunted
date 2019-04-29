@@ -1,0 +1,157 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=513;
+	class ItemIDProvider
+	{
+		nextID=104;
+	};
+	class LayerIndexProvider
+	{
+		nextID=4;
+	};
+	class Camera
+	{
+		pos[]={3335.2402,90.062096,5745.6436};
+		dir[]={-0.83375525,-0.36896524,0.41084817};
+		up[]={-0.33099374,0.92943156,0.163103};
+		aside[]={0.44203445,2.2212043e-007,0.89704186};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F",
+	"A3_Air_F_Heli_Light_01"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=2;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Air_F";
+			name="Arma 3 Alpha - Aircraft";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=11506292;
+class ScenarioData
+{
+	author="Ķing";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=3;
+		class Item0
+		{
+			dataType="Layer";
+			name="Camp Eagle";
+			id=71;
+			atlOffset=59.870041;
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3265.1353,46.102352,5789.5991};
+						angles[]={0,5.4693351,0};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=102;
+					type="B_soldier_M_F";
+					atlOffset=40.689247;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=102;
+						item1=103;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=101;
+			atlOffset=40.689247;
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3265.1396,47.879951,5789.5684};
+				angles[]={0,5.4693351,0};
+			};
+			side="West";
+			flags=2;
+			class Attributes
+			{
+			};
+			id=103;
+			type="B_Heli_Light_01_dynamicLoadout_F";
+			atlOffset=40.689247;
+		};
+	};
+};
