@@ -1,1 +1,1 @@
-call KING_fnc_manageZombies;
+[] spawn  KING_fnc_getBuildingPositions;

@@ -6,5 +6,9 @@ class cfgFunctions
         {
             class manageZombies{};
         };
+        class Utility
+        {
+            class getBuildingPositions{};
+        };
     };
 };
