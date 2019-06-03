@@ -10,5 +10,9 @@ class cfgFunctions
         {
             class getBuildingPositions{};
         };
+        class Events
+        {
+            class VONEvent{};
+        };
     };
 };

@@ -1,9 +1,5 @@
-#include "Functions\cfgFunctions.hpp"
-
-
-
-
-
+#include <Functions\cfgFunctions.hpp>
+#include <Functions\cfgSounds.hpp>
 
 class Header
 {

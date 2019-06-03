@@ -8,31 +8,32 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=104;
+		nextID=112;
 	};
 	class LayerIndexProvider
 	{
-		nextID=4;
+		nextID=8;
 	};
 	class Camera
 	{
-		pos[]={3293.571,61.579327,5787.2651};
-		dir[]={-0.85458398,-0.4766219,0.20644701};
-		up[]={-0.4633269,0.87909585,0.11192843};
-		aside[]={0.23483314,2.8079376e-007,0.9720903};
+		pos[]={2678.6995,74.653046,5925.2451};
+		dir[]={0.51145947,-0.44580686,0.73474687};
+		up[]={0.25474006,0.89509541,0.36595064};
+		aside[]={0.82081163,7.5226853e-007,-0.57136577};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
 	"A3_Characters_F",
-	"A3_Air_F_Heli_Light_01"
+	"A3_Air_F_Heli_Light_01",
+	"A3_Structures_F_Naval_Piers"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -44,6 +45,13 @@ class AddonsMetaData
 		{
 			className="A3_Air_F";
 			name="Arma 3 Alpha - Aircraft";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -75,7 +83,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3;
+		items=7;
 		class Item0
 		{
 			dataType="Layer";
@@ -152,6 +160,64 @@ class Mission
 			id=103;
 			type="B_Heli_Light_01_dynamicLoadout_F";
 			atlOffset=40.689247;
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2737.021,5.7395616,6045.3032};
+				angles[]={0,2.3306367,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=105;
+			type="Land_Pier_F";
+			atlOffset=17.499969;
+		};
+		class Item4
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2753.1187,5.8551111,6030.6826};
+				angles[]={0,2.3370702,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=106;
+			type="Land_Pier_wall_F";
+			atlOffset=18.556671;
+		};
+		class Item5
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2712.5193,-13.890223,6021.7339};
+				angles[]={0,3.8863358,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=107;
+			type="Land_Pier_Box_F";
+			atlOffset=20.408674;
+		};
+		class Item6
+		{
+			dataType="Layer";
+			name="Layer 8";
+			id=111;
+			atlOffset=142.91;
 		};
 	};
 };
