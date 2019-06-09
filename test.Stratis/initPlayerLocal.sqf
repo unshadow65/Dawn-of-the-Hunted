@@ -1,3 +1,3 @@
 waitUntil {getClientState isEqualTo "BRIEFING READ"};
 
-[] spawn KING_fnc_VONEvent;
+[] spawn ZOMB_fnc_VONEvent;

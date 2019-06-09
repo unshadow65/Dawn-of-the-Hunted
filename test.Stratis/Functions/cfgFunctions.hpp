@@ -1,10 +1,10 @@
 class cfgFunctions 
 {
-    class KING
+    class ZOMB
     {
         class ZombieScripts
         {
-            class manageZombies{};
+            class initZombie{};
         };
         class Utility
         {
