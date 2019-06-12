@@ -1,16 +1,15 @@
-params ["_zombie","_targets"];
+params ["_zombie"];
 _zombie = _this select 0;
 
 comment "AI Settings";
-//_zombie disableAI "ALL";
-//_zombie enableAI "TEAMSWITCH";
-//_zombie enableAI "ANIM";
-//_zombie enableAI "MOVE";
-//_zombie enableAI "PATH";
-//_zombie allowfleeing 0;
-//_zombie setvariable ["BIS_noCoreConversations", true];
-//_zombie switchMove (selectRandom ["ApanPknlMstpSnonWnonDnon_G01","ApanPknlMstpSnonWnonDnon_G02","ApanPknlMstpSnonWnonDnon_G03"]);
-//_zombie setUnitAbility 10;
+_zombie disableAI "ALL";
+_zombie enableAI "TEAMSWITCH";
+_zombie enableAI "ANIM";
+_zombie enableAI "MOVE";
+_zombie enableAI "PATH";
+_zombie allowfleeing 0;
+_zombie setvariable ["BIS_noCoreConversations", true];
+_zombie switchMove (selectRandom ["ApanPknlMstpSnonWnonDnon_G01","ApanPknlMstpSnonWnonDnon_G02","ApanPknlMstpSnonWnonDnon_G03"]);
 //doStop _zombie;
 
 _zombie setvariable ["isZombie",true];
@@ -42,14 +41,7 @@ _sleepTime = 1;
 						{
 							systemChat ("Alive Target: " + (name _target));
 							_isZombie = _target getvariable "isZombie";
-							if !(isNil "_isZombie") then
-							{
-								systemChat ("Friendly Target: " + (name _target));
-								_sleepTime = 10;
-								_zombie forceWalk true;
-								_zombie setAnimSpeedCoef (0.8 + random 1);
-							}
-							else
+							if (isNil "_isZombie") then
 							{
 								systemChat ("Enemy Target: " + (name _target));
 								_zombie forceWalk false;
