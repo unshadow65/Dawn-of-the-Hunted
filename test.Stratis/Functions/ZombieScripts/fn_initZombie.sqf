@@ -76,6 +76,33 @@ _sleepTime = 1;
 		{
 			_zombie doMove (getPosASL _zombieTarget);
 			systemChat ("Moving to Target: " + (name _zombieTarget));
+			if (1==1) then
+			{
+				if (_zombie distance _zombieTarget < 1.7 && alive _zombieTarget) then
+				{
+					systemChat ("Target In Range: " + (name _zombieTarget));
+					if (lifeState _zombieTarget == "INCAPACITATED") then
+					{
+						systemChat ("Attacking: " + (name _zombieTarget));
+						_zombie switchMove (selectRandom ["UnconsciousMedicOut","AinvPknlMstpSnonWnonDnon_medic3"]);
+						vehicle _zombieTarget setDamage (damage vehicle _zombieTarget + 0.01 + random 0.02);
+					} else
+					{
+						systemChat ("Attacking: " + (name _zombieTarget));
+						_zombie switchMove (selectRandom ["UnconsciousMedicOut","AinvPknlMstpSrasWrflDnon_Putdown_AmovPknlMstpSrasWrflDnon","AmovPknlMstpSrasWrflDnon_gear_AmovPknlMstpSrasWrflDnon","AmovPknlMstpSnonWnonDnon_AinvPknlMstpSnonWnonDnon_Putdown","AmovPknlMstpSrasWpstDnon_AinvPknlMstpSrasWpstDnon_Putdown","AmovPknlMstpSrasWpstDnon_gear_AmovPknlMstpSrasWpstDnon","AinvPknlMstpSnonWnonDnon_Putdown_AmovPknlMstpSnonWnonDnon","AinvPknlMstpSnonWnonDr_medicUp4"]);
+						vehicle _zombieTarget setDamage (damage vehicle _zombieTarget + 0.01 + random 0.21);
+					};
+					vehicle _zombieTarget setDamage (damage vehicle _zombieTarget + 0.01 + random 0.21);
+					_zombieTarget setFatigue 1;
+					[_zombieTarget] remoteExec ["BIS_fnc_fatigueEffect", owner _zombieTarget];
+					sleep 1.4;
+					if (alive _zombie) then
+					{
+						_zombie setDamage ((damage _zombie)-0.05);
+						_zombie switchMove (selectRandom ["ApanPknlMsprSnonWnonDfl","ApanPknlMsprSnonWnonDfr"]);
+					};
+				};
+			};
 		};
 		sleep _sleepTime;
 	};
