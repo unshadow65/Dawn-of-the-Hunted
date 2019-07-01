@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=116;
+		nextID=118;
 	};
 	class LayerIndexProvider
 	{
-		nextID=24;
+		nextID=26;
 	};
 	class Camera
 	{
-		pos[]={3217.572,29.746223,5815.1548};
-		dir[]={0.33495814,-0.65511364,0.67723233};
-		up[]={0.29043767,0.75552565,0.58721846};
-		aside[]={0.89636105,2.2293534e-008,-0.44333985};
+		pos[]={3944.4097,142.48732,10331.662};
+		dir[]={0.69139493,-0.47818533,-0.54179078};
+		up[]={0.37641785,0.87821609,-0.29496875};
+		aside[]={-0.61688375,-3.3176038e-006,-0.78723919};
 	};
 };
 binarizationWanted=0;
@@ -89,7 +89,7 @@ class Mission
 			dataType="Layer";
 			name="Camp Eagle";
 			id=71;
-			atlOffset=142.91;
+			atlOffset=-252.33;
 		};
 		class Item1
 		{
@@ -103,11 +103,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3226.24,4.4123135,5845.958};
+						position[]={3996.5457,67.945198,10276.377};
 						angles[]={0,5.4693379,0};
 					};
 					side="West";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						name="player_1";
@@ -115,7 +115,7 @@ class Mission
 					};
 					id=102;
 					type="B_soldier_M_F";
-					atlOffset=0.58500004;
+					atlOffset=-7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -164,14 +164,14 @@ class Mission
 			{
 			};
 			id=101;
-			atlOffset=0.58500004;
+			atlOffset=-7.6293945e-006;
 		};
 		class Item2
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2737.021,5.7395616,6045.3032};
+				position[]={3769.8479,135.57965,10299.488};
 				angles[]={0,2.3306367,0};
 			};
 			side="Empty";
@@ -181,14 +181,14 @@ class Mission
 			};
 			id=105;
 			type="Land_Pier_F";
-			atlOffset=17.499969;
+			atlOffset=65.076408;
 		};
 		class Item3
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2753.1187,5.8551111,6030.6826};
+				position[]={3793.6091,134.73993,10280.59};
 				angles[]={0,2.3370702,0};
 			};
 			side="Empty";
@@ -198,14 +198,14 @@ class Mission
 			};
 			id=106;
 			type="Land_Pier_wall_F";
-			atlOffset=18.556671;
+			atlOffset=63.859535;
 		};
 		class Item4
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2712.5193,-13.890223,6021.7339};
+				position[]={3745.3462,112.44901,10275.919};
 				angles[]={0,3.8863358,0};
 			};
 			side="Empty";
@@ -215,14 +215,14 @@ class Mission
 			};
 			id=107;
 			type="Land_Pier_Box_F";
-			atlOffset=20.408674;
+			atlOffset=63.035423;
 		};
 		class Item5
 		{
 			dataType="Layer";
 			name="Layer 8";
 			id=111;
-			atlOffset=142.91;
+			atlOffset=-252.33;
 		};
 		class Item6
 		{
@@ -236,11 +236,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3225.386,4.8663311,5839.9346};
+						position[]={3995.6917,67.965553,10270.354};
 						angles[]={0,5.4693379,0};
 					};
 					side="West";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						name="player_2";
@@ -248,7 +248,7 @@ class Mission
 					};
 					id=113;
 					type="B_soldier_M_F";
-					atlOffset=0.58500051;
+					atlOffset=-7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -297,14 +297,15 @@ class Mission
 			{
 			};
 			id=112;
-			atlOffset=0.58500051;
+			atlOffset=-7.6293945e-006;
 		};
 		class Item7
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={3230.5471,4.5578542,5838.9312};
+				position[]={4445.8545,55.518604,10182.452};
+				angles[]={6.2559919,0,6.2480001};
 			};
 			id=114;
 			type="ModuleCurator_F";
@@ -394,7 +395,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={3230.698,4.6638746,5835.938};
+				position[]={4438.248,55.264133,10166.821};
+				angles[]={6.259192,0,6.2703872};
 			};
 			id=115;
 			type="ModuleCurator_F";
