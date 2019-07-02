@@ -6,6 +6,12 @@ class cfgFunctions
         {
             class initZombie{};
         };
+        class EnvironmentScripts
+        {
+            class initGlobalEnvironment{};
+            class initLocalEnvironment{};
+            class initMusic{};
+        };
         class Utility
         {
             class getBuildingPositions{};
