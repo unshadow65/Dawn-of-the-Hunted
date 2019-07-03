@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=30;
+		nextID=34;
 	};
 	class Camera
 	{
-		pos[]={3944.4097,142.48732,10331.662};
-		dir[]={0.69139493,-0.47818533,-0.54179078};
-		up[]={0.37641785,0.87821609,-0.29496875};
-		aside[]={-0.61688375,-3.3176038e-006,-0.78723919};
+		pos[]={4408.9756,82.234985,10191.623};
+		dir[]={0.64963639,-0.65346199,-0.38855547};
+		up[]={0.56081074,0.75694925,-0.33542839};
+		aside[]={-0.51330692,-3.5956327e-007,-0.85821372};
 	};
 };
 binarizationWanted=0;
@@ -307,6 +307,7 @@ class Mission
 				position[]={4445.8545,55.518604,10182.452};
 				angles[]={6.2559919,0,6.2480001};
 			};
+			init="this addCuratorEditableObjects [vehicles,true];  " \n "this addCuratorEditableObjects [(allMissionObjects ""Man""),true]; " \n "this addCuratorEditableObjects [(allMissionObjects ""Air""),true]; " \n "this addCuratorEditableObjects [(allMissionObjects ""Ammo""),true];";
 			id=114;
 			type="ModuleCurator_F";
 			class CustomAttributes
@@ -398,6 +399,7 @@ class Mission
 				position[]={4438.248,55.264133,10166.821};
 				angles[]={6.259192,0,6.2703872};
 			};
+			init="this addCuratorEditableObjects [vehicles,true];  " \n "this addCuratorEditableObjects [(allMissionObjects ""Man""),true]; " \n "this addCuratorEditableObjects [(allMissionObjects ""Air""),true]; " \n "this addCuratorEditableObjects [(allMissionObjects ""Ammo""),true];";
 			id=115;
 			type="ModuleCurator_F";
 			class CustomAttributes

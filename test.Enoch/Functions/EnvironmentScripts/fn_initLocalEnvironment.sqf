@@ -4,15 +4,15 @@
 	waitUntil {sleep 1; getClientState isEqualTo "BRIEFING READ"};
 	sleep 1;
 
-	comment "Set color filter";
-	"colorCorrections" ppEffectEnable true;
-	"colorCorrections" ppEffectAdjust [1, 0.9, -0.002, [0.0, 0.0, 0.0, 0.0], [1.0, 0.6, 0.4, 0.6],  [0.199, 0.587, 0.114, 0.0]];  
-	"colorCorrections" ppEffectCommit 0;
+	//comment "Set color filter";
+	//"colorCorrections" ppEffectEnable true;
+	//"colorCorrections" ppEffectAdjust [1, 0.9, -0.002, [0.0, 0.0, 0.0, 0.0], [1.0, 0.6, 0.4, 0.6],  [0.199, 0.587, 0.114, 0.0]];  
+	//"colorCorrections" ppEffectCommit 0;
 
 	comment "visual settings";
 	setViewDistance 1500;
  	setObjectViewDistance 2000;
-	setTerrainGrid 50;
+	setTerrainGrid 12.5;
 
 	comment "music volume";
 	10 fadeMusic 0.275;

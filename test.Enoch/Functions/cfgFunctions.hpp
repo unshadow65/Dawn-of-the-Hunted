@@ -11,6 +11,7 @@ class cfgFunctions
             class initGlobalEnvironment{};
             class initLocalEnvironment{};
             class initMusic{};
+            class initVehicleWreck{};
         };
         class Utility
         {

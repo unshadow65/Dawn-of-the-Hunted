@@ -5,32 +5,6 @@ comment "Set fog";
 3 setFog 0.35;
 setViewDistance 500;
 
-comment "random smoke/fire across the map for buildings";
-{
-	_pos = getPos _x;
-	_chance = 100;
-	_rdm = round random _chance;
-	if(_rdm == (_chance/2)) then
-	{
-		_smokeNfire = createVehicle ["test_EmptyObjectForFireBig",_pos,[],0,"CAN_COLLIDE"]; 
-		_light = createVehicle ["#lightpoint",_pos,[],0,"CAN_COLLIDE"]; 
-		[_light,5] remoteExec ["setLightBrightness",0];
-		[_light,[0.75, 0.25, 0.1]] remoteExec ["setLightAmbient",0];
-		[_light,[1, 1, 1]] remoteExec ["setLightColor",0];
-
-		comment "debug only";
-		_marker = createMarkerLocal ["marker_"+str((count allMapMarkers)+1),_pos];
-		_marker setMarkerTypeLocal "mil_dot";
-	};
-}
-forEach nearestTerrainObjects 
-[
-	[worldSize/2, worldSize/2], 
-	["House"],
-	worldSize, 
-	false
-];
-
 comment "damage all buildings";
 {
 	_x setDamage 0.5;
@@ -68,10 +42,11 @@ _classNames =
 	{			
 		_className = _classNames select round random ((count _classNames)-1);
 		_obj = createVehicle [_className,_pos,[],0,"CAN_COLLIDE"];
-		_obj setVariable ["deleteMe",true,true];
+		//_obj setVariable ["deleteMe",true,true];
 		allWrecks pushBack _obj;
 		_obj setDir (round random 360);
 		_obj setPos getPos _obj;
+		[_obj] call ZOMB_fnc_initVehicleWreck;
 
 		comment "debug only";
 		_marker = createMarkerLocal ["marker_"+str((count allMapMarkers)+1),_pos];
@@ -94,7 +69,7 @@ _classNames =
 	_pos = getPos _x;
 	_className = _classNames select round random ((count _classNames)-1);
 	_obj = createVehicle [_className,_pos,[],0,"CAN_COLLIDE"];
-	_obj setVariable ["deleteMe",true,true];
+	//_obj setVariable ["deleteMe",true,true];
 	allWrecks pushBack _obj;
 	_obj setDir (round random 360);
 	_obj setPos getPos _obj;
@@ -104,30 +79,6 @@ _classNames =
 	_marker setMarkerTypeLocal "mil_dot";
 	_marker setMarkerColorLocal "ColorBlue";
 } forEach ([0,0,0] nearobjects ["HeliH",worldsize * 10]);
-
-comment "set random wrecks on fire";
-{
-	_pos = getPos _x;
-	_chance = 6;
-	_rdm = round random _chance;
-	if(_rdm == (_chance/2)) then 
-	{			
-		_marker = createMarkerLocal ["marker_"+str((count allMapMarkers)+1),_pos];
-		_source01 = createVehicle ["#particlesource",getMarkerPos _marker,[],0,"CAN_COLLIDE"]; 
-		_source01 setParticleClass "ObjectDestructionFire1Smallx";
-
-		_light = createVehicle ["#lightpoint",getMarkerPos _marker,[],0,"CAN_COLLIDE"]; 
-		[_light,5] remoteExec ["setLightBrightness",0];
-		[_light,[0.75, 0.25, 0.1]] remoteExec ["setLightAmbient",0];
-		[_light,[1, 1, 1]] remoteExec ["setLightColor",0];
-		deleteMarker _marker;
-
-		comment "debug only";
-		_marker = createMarkerLocal ["marker_"+str((count allMapMarkers)+1),_pos];
-		_marker setMarkerTypeLocal "mil_dot";
-		_marker setMarkerColorLocal "ColorRed";
-	};
-} foreach allWrecks;
 
 /*
 _source01 = "#particlesource" createVehicle getPos player; 
