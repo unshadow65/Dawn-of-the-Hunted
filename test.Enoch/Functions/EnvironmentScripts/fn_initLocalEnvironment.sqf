@@ -11,7 +11,7 @@
 
 	comment "visual settings";
 	setViewDistance 1500;
- 	setObjectViewDistance 2000;
+ 	setObjectViewDistance 1500;
 	setTerrainGrid 12.5;
 
 	comment "music volume";
