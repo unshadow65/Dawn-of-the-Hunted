@@ -227,8 +227,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -237,10 +237,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_25";
+									value=0;
 								};
 							};
 						};
@@ -284,8 +284,8 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -294,10 +294,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_25";
 								};
 							};
 						};
@@ -364,8 +364,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -374,10 +374,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="LivonianHead_2";
+									value=0;
 								};
 							};
 						};
@@ -421,8 +421,8 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -431,10 +431,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="LivonianHead_2";
 								};
 							};
 						};
@@ -502,8 +502,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -512,10 +512,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_24";
+									value=0;
 								};
 							};
 						};
@@ -559,8 +559,8 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -569,10 +569,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_24";
 								};
 							};
 						};
@@ -641,8 +641,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -651,10 +651,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="LivonianHead_9";
+									value=0;
 								};
 							};
 						};
@@ -698,8 +698,8 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -708,10 +708,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="LivonianHead_9";
 								};
 							};
 						};
@@ -779,8 +779,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -789,10 +789,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="RussianHead_2";
+									value=0;
 								};
 							};
 						};
@@ -836,8 +836,8 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -846,10 +846,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="RussianHead_2";
 								};
 							};
 						};
