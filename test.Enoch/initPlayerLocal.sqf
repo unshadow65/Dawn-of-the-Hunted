@@ -31,3 +31,4 @@ player enableSimulation true;
 player triggerDynamicSimulation true;
 player setvariable ["name",name player,true];
 ["isCombat"] call BIS_fnc_jukebox;
+call ZOMB_fnc_initLocalEnvironment;
